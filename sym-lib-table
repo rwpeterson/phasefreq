@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name grav)(type Legacy)(uri ${KIPRJMOD}/grav.lib)(options "")(descr ""))
+)
