@@ -10,10 +10,11 @@
 * Perform PFD calculation (Analog AD9901, ECL logic family)
 * Low-pass filter to convert PFD output's pulse train duty cycle to a dc voltage
 * Tunable output offset, jumper-switchable sign of gain
+* This is basically Fig. 12 of the [AD9901 datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/AD9901.pdf), which describes a PLL circuit with discrete comparator, PFD, etc., minus the VCO and the divider, all on one board
 
 ## What is a PFD?
 
-A phase-frequency discriminator is similar to an analog mixer, in that if the lo and rf frequencies are the same, its output is proportional to the relative phase between them. However, if the lo and rf frequencies differ, a PFD will output a constant voltage whose sign indicates which of the two frequencies is larger. In this case, an analog mixer would produce if beatnotes at the sum and difference frequencies. This second characteristic of a PFD is useful to more quickly bring a frequency-feedback system into lock.
+A phase-frequency discriminator is similar to an analog mixer, in that if the LO and RF frequencies are the same, its output is proportional to the relative phase between them. However, if the LO and RF frequencies differ, a PFD will output a constant voltage whose sign indicates which of the two frequencies is larger. In this case, an analog mixer would produce IF beatnotes at the sum and difference frequencies. This second characteristic of a PFD is useful to more quickly bring a frequency-feedback system into lock.
 
 ## Other options?
 
