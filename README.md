@@ -14,7 +14,7 @@
 
 ## What is a PFD?
 
-A phase-frequency discriminator is similar to an analog mixer, in that if the LO and RF frequencies are the same, its output is proportional to the relative phase between them. However, if the LO and RF frequencies differ, a PFD will output a constant voltage whose sign indicates which of the two frequencies is larger. In this case, an analog mixer would produce IF beatnotes at the sum and difference frequencies. This second characteristic of a PFD is useful to more quickly bring a frequency-feedback system into lock.
+A phase-frequency discriminator (or phase-frequency detector) is similar to an analog mixer, in that if the LO and RF frequencies are the same, its output is proportional to the relative phase between them. However, if the LO and RF frequencies differ, a PFD will output a constant voltage whose sign indicates which of the two frequencies is larger. In this case, an analog mixer would produce IF beatnotes at the sum and difference frequencies. This second characteristic of a PFD is useful to more quickly bring a frequency-feedback system into lock.
 
 ## Other options?
 
