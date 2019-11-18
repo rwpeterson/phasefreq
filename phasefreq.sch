@@ -2531,5 +2531,9 @@ Clean up bypass cap situation here?
 Text Notes 5300 1100 0    50   ~ 0
 What is going on at this termination again?\nReplace with termination to 50 Ohm to ground?
 Text Notes 4750 2600 0    50   ~ 0
-Switch to ADCMP565? Better package (same as PFD), maybe more complicated hysteresis?
+Switch to ADCMP565?\nBetter package (same as PFD),\nmaybe more complicated hysteresis?
+Text Notes 7450 4750 0    50   ~ 0
+For ADCMP565, need +/- 20 mV bias, hackable to +/-100 mV if I misread datasheet
+Text Notes 9750 2350 0    50   ~ 0
+Should also put TVS on output???
 $EndSCHEMATC
