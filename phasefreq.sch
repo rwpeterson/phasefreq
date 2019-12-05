@@ -1365,31 +1365,20 @@ Wire Wire Line
 Wire Wire Line
 	10500 1150 10500 1450
 $Comp
-L Device:C_Small C36
-U 1 1 5DF0D92D
-P 7700 850
-F 0 "C36" V 7600 900 50  0000 R CNN
-F 1 "100n" V 7500 950 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7700 850 50  0001 C CNN
-F 3 "~" H 7700 850 50  0001 C CNN
-	1    7700 850 
-	0    1    -1   0   
-$EndComp
-$Comp
 L Device:R_POT RV5
 U 1 1 5DF10BE3
-P 8550 950
-F 0 "RV5" H 8481 996 50  0000 R CNN
-F 1 "50K" H 8481 905 50  0000 R CNN
-F 2 "Potentiometer_SMD:Potentiometer_Vishay_TS53YJ_Vertical" H 8550 950 50  0001 C CNN
-F 3 "~" H 8550 950 50  0001 C CNN
-	1    8550 950 
+P 8450 900
+F 0 "RV5" H 8381 946 50  0000 R CNN
+F 1 "50K" H 8381 855 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Vishay_TS53YJ_Vertical" H 8450 900 50  0001 C CNN
+F 3 "~" H 8450 900 50  0001 C CNN
+	1    8450 900 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8550 1150 8550 1100
+	8450 1100 8450 1050
 Wire Wire Line
-	8550 800  8550 750 
+	8450 750  8450 700 
 $Comp
 L Connector:Conn_Coaxial J4
 U 1 1 5DFC9717
@@ -1733,10 +1722,6 @@ F 3 "~" H 1000 2950 50  0001 C CNN
 	1    1000 2950
 	1    0    0    1   
 $EndComp
-Text GLabel 7500 750  0    50   Input ~ 0
-VTUNE+
-Wire Wire Line
-	8550 1650 8750 1650
 $Comp
 L power:GNDA #PWR029
 U 1 1 5DF29650
@@ -1766,12 +1751,12 @@ $EndComp
 $Comp
 L Device:C_Small C35
 U 1 1 5E2D217A
-P 7450 2150
-F 0 "C35" H 7542 2196 50  0000 L CNN
-F 1 "DNP" H 7542 2105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7450 2150 50  0001 C CNN
-F 3 "~" H 7450 2150 50  0001 C CNN
-	1    7450 2150
+P 7450 2050
+F 0 "C35" H 7542 2096 50  0000 L CNN
+F 1 "DNP" H 7542 2005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7450 2050 50  0001 C CNN
+F 3 "~" H 7450 2050 50  0001 C CNN
+	1    7450 2050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1786,54 +1771,16 @@ F 3 "" H 7450 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C41
-U 1 1 5E39A406
-P 8200 1050
-F 0 "C41" V 8100 1100 50  0000 R CNN
-F 1 "100n" V 8000 1150 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8200 1050 50  0001 C CNN
-F 3 "~" H 8200 1050 50  0001 C CNN
-	1    8200 1050
-	0    -1   1    0   
-$EndComp
-$Comp
 L power:GNDA #PWR026
 U 1 1 5E3FF178
-P 7900 900
-F 0 "#PWR026" H 7900 650 50  0001 C CNN
-F 1 "GNDA" H 7905 727 50  0000 C CNN
-F 2 "" H 7900 900 50  0001 C CNN
-F 3 "" H 7900 900 50  0001 C CNN
-	1    7900 900 
+P 7400 700
+F 0 "#PWR026" H 7400 450 50  0001 C CNN
+F 1 "GNDA" H 7405 527 50  0000 C CNN
+F 2 "" H 7400 700 50  0001 C CNN
+F 3 "" H 7400 700 50  0001 C CNN
+	1    7400 700 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7800 850  7900 850 
-Wire Wire Line
-	7900 850  7900 900 
-Wire Wire Line
-	8050 1050 8050 850 
-Wire Wire Line
-	8050 850  7900 850 
-Connection ~ 7900 850 
-Wire Wire Line
-	8300 1050 8300 1150
-Connection ~ 8300 1150
-Wire Wire Line
-	8300 1150 8550 1150
-Wire Wire Line
-	7600 850  7600 750 
-Wire Wire Line
-	8100 1050 8050 1050
-Wire Wire Line
-	7500 750  7600 750 
-Connection ~ 7600 750 
-Wire Wire Line
-	7600 750  8550 750 
-Wire Wire Line
-	7500 1150 8300 1150
-Wire Wire Line
-	8700 950  8850 950 
 Text GLabel 8750 4200 2    50   Input ~ 0
 VTUNE-
 Connection ~ 8400 4200
@@ -2142,8 +2089,6 @@ Wire Wire Line
 Connection ~ 3100 1250
 Wire Wire Line
 	3100 1250 3100 1350
-Text Notes 9750 2350 0    50   ~ 0
-Should also put TVS on output???
 Connection ~ 4550 2850
 Wire Wire Line
 	4950 4050 4800 4050
@@ -2212,12 +2157,12 @@ Wire Wire Line
 $Comp
 L Device:C_Small C?
 U 1 1 5DFC0EDB
-P 7050 2150
-F 0 "C?" H 7142 2196 50  0000 L CNN
-F 1 "DNP" H 7142 2105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7050 2150 50  0001 C CNN
-F 3 "~" H 7050 2150 50  0001 C CNN
-	1    7050 2150
+P 7050 2050
+F 0 "C?" H 7142 2096 50  0000 L CNN
+F 1 "DNP" H 7142 2005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7050 2050 50  0001 C CNN
+F 3 "~" H 7050 2050 50  0001 C CNN
+	1    7050 2050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2231,34 +2176,10 @@ F 3 "" H 7050 2250 50  0001 C CNN
 	1    7050 2250
 	1    0    0    -1  
 $EndComp
-Text GLabel 7500 1150 0    50   Input ~ 0
+Text GLabel 7500 1100 0    50   Input ~ 0
 VTUNE-
-$Comp
-L Device:R_Small R22
-U 1 1 5E2D2174
-P 7450 1950
-F 0 "R22" H 7391 1904 50  0000 R CNN
-F 1 "DNP" H 7391 1995 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7450 1950 50  0001 C CNN
-F 3 "~" H 7450 1950 50  0001 C CNN
-	1    7450 1950
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5E07336D
-P 7050 1950
-F 0 "R?" H 6991 1904 50  0000 R CNN
-F 1 "DNP" H 6991 1995 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7050 1950 50  0001 C CNN
-F 3 "~" H 7050 1950 50  0001 C CNN
-	1    7050 1950
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	6500 1750 6650 1750
-Wire Wire Line
-	7050 1850 7050 1750
 Connection ~ 7050 1750
 Wire Wire Line
 	7050 1750 7150 1750
@@ -2269,8 +2190,6 @@ Wire Wire Line
 	6650 1750 7050 1750
 Wire Wire Line
 	7350 1750 7450 1750
-Wire Wire Line
-	7450 1750 7450 1850
 Wire Notes Line
 	6200 1400 6200 2600
 Wire Notes Line
@@ -2582,4 +2501,62 @@ Wire Wire Line
 	5800 4100 5600 4100
 Wire Wire Line
 	5600 4100 5600 4500
+$Comp
+L Device:C_Small C?
+U 1 1 5E1F7DC1
+P 7650 900
+F 0 "C?" H 7742 946 50  0000 L CNN
+F 1 "100n" H 7742 855 50  0000 L CNN
+F 2 "" H 7650 900 50  0001 C CNN
+F 3 "~" H 7650 900 50  0001 C CNN
+	1    7650 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 1000 7650 1100
+Wire Wire Line
+	7650 1100 7500 1100
+Wire Wire Line
+	7650 800  7650 700 
+Connection ~ 7650 700 
+Wire Wire Line
+	7400 700  7650 700 
+$Comp
+L Device:R_Small R?
+U 1 1 5E286A64
+P 8050 1100
+F 0 "R?" V 8246 1100 50  0000 C CNN
+F 1 "28K" V 8155 1100 50  0000 C CNN
+F 2 "" H 8050 1100 50  0001 C CNN
+F 3 "~" H 8050 1100 50  0001 C CNN
+	1    8050 1100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7650 1100 7950 1100
+Connection ~ 7650 1100
+Wire Wire Line
+	8150 1100 8450 1100
+Wire Wire Line
+	7650 700  8450 700 
+Wire Wire Line
+	9100 900  9100 1000
+Wire Wire Line
+	9100 1000 9600 1000
+Wire Wire Line
+	8600 900  9100 900 
+Wire Wire Line
+	9100 1650 9100 1350
+Wire Wire Line
+	9100 1350 9600 1350
+Wire Wire Line
+	8550 1650 9100 1650
+Wire Wire Line
+	7450 1750 7450 1950
+Wire Wire Line
+	7050 1750 7050 1950
+Wire Wire Line
+	7050 2150 7050 2250
+Wire Wire Line
+	7450 2150 7450 2250
 $EndSCHEMATC
