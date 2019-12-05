@@ -1240,7 +1240,7 @@ L Reference_Voltage:LM4040DBZ-3 U5
 U 1 1 5D8810B0
 P 6850 3600
 F 0 "U5" V 6800 3850 50  0000 L CNN
-F 1 "LM4040DBZ-3" V 6700 3650 50  0000 L CNN
+F 1 "LM4040DIZ-2.5" V 6700 3650 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6850 3400 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm4040-n.pdf" H 6850 3600 50  0001 C CIN
 	1    6850 3600
@@ -1268,7 +1268,7 @@ L Device:R_Small R23
 U 1 1 5D95B97B
 P 7650 4100
 F 0 "R23" V 7454 4100 50  0000 C CNN
-F 1 "3K32" V 7545 4100 50  0000 C CNN
+F 1 "1K" V 7545 4100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 7650 4100 50  0001 C CNN
 F 3 "~" H 7650 4100 50  0001 C CNN
 	1    7650 4100
@@ -1855,7 +1855,7 @@ L Device:R_Small R24
 U 1 1 5D9E66A0
 P 8100 3900
 F 0 "R24" V 7904 3900 50  0000 C CNN
-F 1 "5K00" V 7995 3900 50  0000 C CNN
+F 1 "1K" V 7995 3900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 8100 3900 50  0001 C CNN
 F 3 "~" H 8100 3900 50  0001 C CNN
 	1    8100 3900
@@ -2054,10 +2054,8 @@ F 3 "" H 6200 3450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6200 3450 6350 3450
-Text Notes 8600 3750 0    50   ~ 0
+Text Notes 8550 3900 0    50   ~ 0
 ADCMP564 input voltage range: -2 V to 3 V\nTVS diodes: +/-2.8 V\n-2.8 is within maximum permissible voltage
-Text Notes 8600 4000 0    50   ~ 0
-VTUNE- is wrong. switch to LM4040-2.5 or tune op-amp resistors?
 $Comp
 L grav:SLVU2.8-8 D?
 U 1 1 5DDD0E9B
