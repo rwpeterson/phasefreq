@@ -1595,12 +1595,6 @@ Wire Wire Line
 	1150 4950 1150 5250
 Wire Wire Line
 	950  4950 950  5250
-Wire Wire Line
-	1100 5950 1050 5950
-Wire Wire Line
-	1100 5900 1100 5950
-Wire Wire Line
-	1050 5600 1050 5900
 Connection ~ 1050 5600
 Wire Wire Line
 	1100 5600 1050 5600
@@ -1608,11 +1602,6 @@ Wire Wire Line
 	1100 5550 1100 5600
 Wire Wire Line
 	1050 4950 1050 5550
-Wire Wire Line
-	1050 5900 1050 5950
-Connection ~ 1050 5900
-Wire Wire Line
-	1000 5900 1050 5900
 Wire Wire Line
 	1050 5550 1050 5600
 Connection ~ 1050 5550
@@ -1623,55 +1612,19 @@ Wire Wire Line
 	750  5250 950  5250
 Wire Wire Line
 	750  5550 750  5250
-Connection ~ 750  5900
 Wire Wire Line
 	750  5550 800  5550
 Wire Wire Line
-	750  5900 750  5550
-Wire Wire Line
-	750  5900 800  5900
-Wire Wire Line
-	750  6000 750  5900
-Wire Wire Line
 	950  6000 750  6000
-Connection ~ 1350 5900
 Wire Wire Line
 	1350 6000 1150 6000
-Wire Wire Line
-	1350 5900 1350 6000
 Connection ~ 1350 5550
-Wire Wire Line
-	1350 5900 1300 5900
-Wire Wire Line
-	1350 5550 1350 5900
 Wire Wire Line
 	1350 5550 1300 5550
 Wire Wire Line
 	1350 5250 1350 5550
 Wire Wire Line
 	1150 5250 1350 5250
-$Comp
-L Device:C_Small C5
-U 1 1 5D1EB9D3
-P 1200 5900
-F 0 "C5" V 971 5900 50  0000 C CNN
-F 1 "100n" V 1062 5900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1200 5900 50  0001 C CNN
-F 3 "~" H 1200 5900 50  0001 C CNN
-	1    1200 5900
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C2
-U 1 1 5D1EB343
-P 900 5900
-F 0 "C2" V 671 5900 50  0000 C CNN
-F 1 "100n" V 762 5900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 900 5900 50  0001 C CNN
-F 3 "~" H 900 5900 50  0001 C CNN
-	1    900  5900
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:CP_Small C1
 U 1 1 5D1E98EC
@@ -1830,9 +1783,6 @@ Wire Wire Line
 	1150 6000 1150 6250
 Wire Wire Line
 	1150 6250 1250 6250
-Wire Wire Line
-	1050 5950 1050 6800
-Connection ~ 1050 5950
 Wire Wire Line
 	950  7350 950  6000
 $Comp
@@ -2675,4 +2625,10 @@ Wire Wire Line
 	6450 1400 7500 1400
 Wire Wire Line
 	8550 1000 8550 1150
+Wire Wire Line
+	1350 5550 1350 6000
+Wire Wire Line
+	750  5550 750  6000
+Wire Wire Line
+	1050 5600 1050 6800
 $EndSCHEMATC
