@@ -10,7 +10,7 @@
 * Perform PFD calculation (Analog AD9901 phase-frequency discriminator, ECL logic family)
 * Low-pass filter to convert PFD output's pulse train duty cycle to a dc voltage
 * Tunable output offset, jumper-switchable sign of gain
-* This is basically Fig. 12 of the [AD9901 datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/AD9901.pdf), which describes a PLL circuit with discrete comparator, PFD, etc., minus the VCO and the divider, all on one board
+* This is basically a subset of the reference design in Fig. 12 of the [AD9901 datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/AD9901.pdf), which describes a complete PLL circuit with discrete comparator, PFD, VCO, divider, etc. Here we wish to implement only the comparator, phase-frequency detector, and loop filter
 
 ## What is a PFD?
 
@@ -18,5 +18,5 @@ A phase-frequency detector (or phase-frequency discriminator) is similar to an a
 
 ## Other options?
 
-More sophisticated PLL ICs contain builtin PFDs as part of the feedback loop. Some evaluation boards expose enough functionality to use them solely as a PFD, but they are prohibitively expensive for many applications where a simple PFD would be beneficial, and often need to be programmed or initialized at the point of use.
+Of course, an analog mixer may be perfectly suitable for your application. More sophisticated PLL ICs contain builtin PFDs as part of the feedback loop. Some evaluation boards expose enough functionality to use them solely as a PFD, but they are prohibitively expensive for many applications where a simple PFD would be beneficial, and often need to be programmed or initialized at the point of use.
 
