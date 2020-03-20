@@ -20,3 +20,12 @@ A phase-frequency detector (or phase-frequency discriminator) is similar to an a
 
 Of course, an analog mixer may be perfectly suitable for your application. More sophisticated PLL ICs contain builtin PFDs as part of the feedback loop. Some evaluation boards expose enough functionality to use them solely as a PFD, but they are prohibitively expensive for many applications where a simple PFD would be beneficial, and often need to be programmed or initialized at the point of use.
 
+## Characterization
+
+![Figure 1](doc/bidirectional-phase.png?raw=true)
+### Figure 1: Bidirectional phase sweep (RF and LO at 10 MHz)
+Scanning the relative phase of the inputs demonstrates the linear phase detection and capture range. The location of the linear phase detection is modulo 2 pi as expected. However, when the phase is scanned away from a given phase detection range, the IF output will rail for one additional phase cycle before phase-slipping to the *second* capture range 4 pi away (as shown). For frequencies > 50 MHz, the ends of the phase detection range will be distorted (see AD9901 datasheet, Fig. 7).
+
+![Figure 2](doc/frequency-sweep.png?raw=true)
+### Figure 2: Frequency discrimination characteristic, LO = 10 MHz
+When the RF and LO frequencies differ substantially, the PFD outputs a constant voltage indicating which is higher.
