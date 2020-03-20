@@ -1,5 +1,5 @@
 # phasefreq
- Phase-frequency detector PCB
+ Phase-frequency detector PCB built around the AD9901
 
 ## Design goals
 
