@@ -29,3 +29,9 @@ Scanning the relative phase of the inputs demonstrates the linear phase detectio
 ![Figure 2](doc/frequency-sweep.png?raw=true)
 ### Figure 2: Frequency discrimination characteristic, LO = 10 MHz
 When the RF and LO frequencies differ substantially, the PFD outputs a constant voltage indicating which is higher.
+
+## Prototype
+
+![Prototype](doc/prototype.jpg?raw=true)
+### Figure 3: revB1 prototype in 3D-printed case (lid removed)
+This is the device used for the above characterization plots.
