@@ -32,6 +32,6 @@ When the RF and LO frequencies differ substantially, the PFD outputs a constant 
 
 ## Prototype
 
-![Prototype](doc/prototype.jpg?raw=true)
+![Prototype](doc/revB1_case.jpg?raw=true)
 ### Figure 3: revB1 prototype in 3D-printed case (lid removed)
 This is the device used for the above characterization plots.
